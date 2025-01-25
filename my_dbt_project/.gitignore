@@ -2,3 +2,12 @@
 target/
 dbt_packages/
 logs/
+macros/.gitkeep
+analyses/
+dbt_packages/
+logs/
+seeds/
+snapshots/
+target/
+tests/
+package-lock.yml
