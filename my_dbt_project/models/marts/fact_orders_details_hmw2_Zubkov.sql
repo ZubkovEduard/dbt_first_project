@@ -1,4 +1,5 @@
 select
+ {{ dbt_utils.generate_surrogate_key(['details.order_id','details.product_id'])}} as surrogate_key,
    details.order_id,
    details.product_id,
    details.unit_price,
