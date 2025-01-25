@@ -1,7 +1,25 @@
 {% macro continent(country) -%}
    case
-       When {{country}} = 'USA' then 'NORTH AMERICA'
-       When {{country}} = 'GERMANY' then 'EUROPE'
-       else 'UNKNOWN'
+    When {{country}} = 'USA' then 'NORTH AMERICA'
+    When {{country}} = 'CANADA' then 'NORTH AMERICA'
+    When {{country}} = 'MEXICO' then 'NORTH AMERICA'
+    When {{country}} = 'BRAZIL' then 'SOUTH AMERICA'
+    When {{country}} = 'ARGENTINA' then 'SOUTH AMERICA'
+    When {{country}} = 'VENEZUELA' then 'SOUTH AMERICA'
+    When {{country}} = 'GERMANY' then 'EUROPE'
+    When {{country}} = 'ITALY' then 'EUROPE'
+    When {{country}} = 'FINLAND' then 'EUROPE'
+    When {{country}} = 'SWITZERLAND' then 'EUROPE'
+    When {{country}} = 'SWEDEN' then 'EUROPE'
+    When {{country}} = 'AUSTRIA' then 'EUROPE'
+    When {{country}} = 'UK' then 'EUROPE'
+    When {{country}} = 'POLAND' then 'EUROPE'
+    When {{country}} = 'IRELAND' then 'EUROPE'
+    When {{country}} = 'NORWAY' then 'EUROPE'
+    When {{country}} = 'FRANCE' then 'EUROPE'
+    When {{country}} = 'BELGIUM' then 'EUROPE'
+    When {{country}} = 'SPAIN' then 'EUROPE'
+    When {{country}} = 'DENMARK' then 'EUROPE'
+    When {{country}} = 'PORTUGAL' then 'EUROPE'
    end
 {%- endmacro %}
