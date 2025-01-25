@@ -1,0 +1,11 @@
+version: 2
+
+
+models:
+ - name: fact_orders_details_hmw2_Zubkov
+   description: "Order Details"
+   columns:
+     - name: surrogate_key
+       description: "The primary key for this table"
+       data_tests:
+         - unique
